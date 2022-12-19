@@ -4,7 +4,7 @@ import Container from '../Container';
 import Activity from './Activity';
 import userAPIs from '../../apis/user';
 import { toast } from 'react-toastify';
-import throttle from 'lodash.throttle';
+// import throttle from 'lodash.throttle';
 import moment from 'moment';
 
 type Activity = {
@@ -75,15 +75,15 @@ const RecentActivity = (): JSX.Element => {
     }
   };
 
-  const debounceOnScroll = throttle(() => {
-    let nextPage = currentPageRef.current + 1;
-    setLoading(true);
-    _fetchRecentActivity(nextPage);
+  // const debounceOnScroll = throttle(() => {
+  //   let nextPage = currentPageRef.current + 1;
+  //   setLoading(true);
+  //   _fetchRecentActivity(nextPage);
 
-    if (nextPage === lastPage) {
-      window.removeEventListener('scroll', scrollListener);
-    }
-  }, 200);
+  //   if (nextPage === lastPage) {
+  //     window.removeEventListener('scroll', scrollListener);
+  //   }
+  // }, 200);
 
   const incrementPage = () => {
     if (currentPageRef.current === 1) {
@@ -99,7 +99,7 @@ const RecentActivity = (): JSX.Element => {
     }
 
     if (bottomRef.current.scrollHeight < window.scrollY + 100) {
-      debounceOnScroll();
+      // debounceOnScroll();
     }
   };
 
