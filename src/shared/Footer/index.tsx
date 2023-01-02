@@ -7,12 +7,12 @@ const Footer = () => {
       <div className="flex items-center">
         <Link href={'/'}>
           <div className="text-2xl md:text-4xl cursor-pointer font-bold">
-            Amruth&apos;s Blogs
+            Amruth&apos;s Blog
           </div>
         </Link>
       </div>
       <div className="my-auto">
-        Amruth&apos;s Blogs &copy; {new Date().getFullYear()}
+        Amruth&apos;s Blog &copy; {new Date().getFullYear()}
       </div>
     </div>
   );

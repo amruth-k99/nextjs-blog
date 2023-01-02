@@ -14,6 +14,7 @@ import { BsReply } from "react-icons/bs";
 import { toast } from "react-toastify";
 import Skeleton from "react-loading-skeleton";
 import Link from "next/link";
+import HTMLReactParser from "html-react-parser";
 
 export default function PostPage({
   post,
@@ -190,7 +191,7 @@ const PostView = ({ blog }: any) => {
                 </div>
 
                 <div className="bg-white text-justify lg:text-start w-full overflow-auto text-lg my-5 placeholder-gray-500 border-none focus:backdrop-filter-none focus:outline-none">
-                  {blog?.content}
+                  {HTMLReactParser(blog.content)}
                 </div>
 
                 <div className="bg-white flex justify-start text-md my-10 w-full placeholder-gray-500 border-none focus:backdrop-filter-none focus:outline-none">

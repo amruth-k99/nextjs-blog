@@ -11,7 +11,7 @@ const Header = () => {
         <div className="flex items-center">
           <Link href={"/"}>
             <div className="text-2xl md:text-4xl cursor-pointer font-bold">
-              Amruth&apos;s Blogs
+              Amruth&apos;s Blog
             </div>
           </Link>
         </div>

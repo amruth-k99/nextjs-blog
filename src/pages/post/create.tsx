@@ -1,20 +1,22 @@
-import type { NextPage } from 'next';
-import { useRef, useState } from 'react';
-import Container from '../../components/Container';
-import postAPI from '../../apis/posts';
-import { toast } from 'react-toastify';
-import { useRouter } from 'next/router';
-import SEO from '../../components/SEO';
-import { AiOutlineLoading3Quarters } from 'react-icons/ai';
+import type { NextPage } from "next";
+import { useRef, useState } from "react";
+import Container from "../../components/Container";
+import postAPI from "../../apis/posts";
+import { toast } from "react-toastify";
+import { useRouter } from "next/router";
+import SEO from "../../components/SEO";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import dynamic from "next/dynamic";
+const Editor = dynamic(() => import("../../components/Editor"), { ssr: false });
 
 const Home: NextPage = () => {
   const router = useRouter();
   const [blog, setBlog] = useState({
-    title: '',
-    content: '',
-    image: '',
-    slug: '',
-    tags: '',
+    title: "",
+    content: "",
+    image: "",
+    slug: "",
+    tags: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -22,12 +24,12 @@ const Home: NextPage = () => {
 
   const createPost = async () => {
     if (!blog.title.trim()) {
-      toast.error('Title is required');
+      toast.error("Title is required");
       return;
     }
 
     if (!blog.content.trim()) {
-      toast.error('Content is required');
+      toast.error("Content is required");
       return;
     }
 
@@ -37,9 +39,9 @@ const Home: NextPage = () => {
         ...blog,
         title: blog.title.trim(),
         content: blog.content.trim(),
-        tags: blog.tags.split(','),
+        tags: blog.tags.split(","),
         slug: encodeURI(
-          blog.title.replace(/\s/g, '-').toLowerCase() +
+          blog.title.replace(/\s/g, "-").toLowerCase() +
             Math.floor(Math.random() * 1000)
         ),
       };
@@ -48,12 +50,12 @@ const Home: NextPage = () => {
       if (res.error) {
         toast.error(res.error);
       } else {
-        toast.success('Post created successfully');
+        toast.success("Post created successfully");
         router.push(`/post/${body.slug}`);
       }
     } catch (err) {
       console.log(err);
-      toast.error('Something went wrong. Please try again later.');
+      toast.error("Something went wrong. Please try again later.");
     }
     setLoading(false);
   };
@@ -68,7 +70,7 @@ const Home: NextPage = () => {
       <SEO title="Create New Post" description="Create a new post" />
 
       <div className="mx-auto sm:px-4 md:px-10 px-10">
-        <main className={'my-3'}>
+        <main className={"my-3"}>
           <Container heading="">
             <div>
               <input
@@ -78,18 +80,11 @@ const Home: NextPage = () => {
                 className="bg-white text-4xl my-5 w-full placeholder-gray-500 font-extrabold border-none focus:backdrop-filter-none focus:outline-none"
               />
 
-              <textarea
-                placeholder="Blog Starts Here..."
-                style={{
-                  minHeight: '40vh',
-                  overflow: 'auto',
-                  height: 'auto',
+              <Editor
+                onChange={(e) => {
+                  setBlog({ ...blog, content: e });
                 }}
-                name="content"
-                onChange={handleInputChange}
-                ref={contentRef}
-                className="bg-white w-full overflow-auto text-lg my-5 placeholder-gray-500 border-none focus:backdrop-filter-none focus:outline-none"
-              ></textarea>
+              />
 
               <input
                 name="tags"
@@ -108,7 +103,7 @@ const Home: NextPage = () => {
                   {loading ? (
                     <AiOutlineLoading3Quarters className="mx-3 duration-200 animate-spin text-lg text-white" />
                   ) : (
-                    'Create'
+                    "Create"
                   )}
                 </div>
               </button>
