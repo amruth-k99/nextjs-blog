@@ -14,8 +14,8 @@ class Editor extends Component<Props> {
   constructor(props: any) {
     super(props);
     this.state = {
-      editorHtml: `<p>Testing new features</p><p>Here is an image:<img src="https://amruths-blog-images.s3.ap-south-1.amazonaws.com/images/Screenshot%202022-08-13%20at%2012.27.32%20AM.png"></p><p><br></p><p>Ending note.</p><p>Thank you for reading.</p><p><br></p><p>Amruth Kuntamalla</p><p><a href="https://AmruthKuntamalla.live" rel="noopener noreferrer" target="_blank">https://www.AmruthKuntamalla.live</a></p>`,
-      theme: "snow",
+      editorHtml: ``,
+      theme: "bubble",
       showPreview: true,
       splitView: true,
     };
@@ -112,7 +112,7 @@ class Editor extends Component<Props> {
   };
 
   render(): React.ReactNode {
-    const { editorHtml, splitView, showPreview }: any = this.state || {};
+    const { editorHtml, theme, splitView, showPreview }: any = this.state || {};
     return (
       <div>
         {/* show preview */}
@@ -140,7 +140,7 @@ class Editor extends Component<Props> {
                 ref={(el) => {
                   quill = el;
                 }}
-                theme="bubble"
+                theme={theme}
                 modules={{
                   toolbar: {
                     container: [
@@ -168,6 +168,7 @@ class Editor extends Component<Props> {
                 style={{
                   height: "100%",
                   width: "100%",
+                  minHeight: "50vh",
                 }}
               />
               <input className="hidden" type={"file"} id="image" />
@@ -176,7 +177,7 @@ class Editor extends Component<Props> {
 
           {splitView && (
             <div className="prose">
-              View Only
+              <div className="text-lg text-gray-500 text-center">View Only</div>
               {parser(editorHtml)}
             </div>
           )}
