@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
 import { useEffect, useState } from "react";
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Container from "../components/Container";
-import MainContainer from "../components/storefront/MainContainer";
 import RecentActivity from "../components/RecentActivity";
 import postAPI from "../apis/posts";
 import Skeleton from "react-loading-skeleton";
@@ -55,24 +56,12 @@ const Home: NextPage = () => {
     <div className="px-3">
       <SEO />
 
-      <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="col-span-1">
-          <Container heading="Top 5 most visited posts">
-            <MainContainer />
-          </Container>
-        </div>
+      <main className="my-3">
+        <Container heading="Top 5 most visited posts">
+          {_renderTopFivePosts()}
+        </Container>
 
-        <div className="col-span-1">
-          <Container heading="Top 5 most visited posts">
-            {_renderTopFivePosts()}
-          </Container>
-        </div>
-
-        <div className="col-span-1">
-          <Container heading="Top 5 most visited posts">
-            {_renderTopFivePosts()}
-          </Container>
-        </div>
+        <RecentActivity />
       </main>
     </div>
   );

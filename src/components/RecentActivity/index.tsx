@@ -4,7 +4,6 @@ import Container from '../Container';
 import Activity from './Activity';
 import userAPIs from '../../apis/user';
 import { toast } from 'react-toastify';
-// import throttle from 'lodash.throttle';
 import moment from 'moment';
 
 type Activity = {
