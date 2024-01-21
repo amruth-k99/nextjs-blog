@@ -35,8 +35,8 @@ const Header = () => {
             />
             {isSearchFocused && (
               <div className="bg-gray-50">
-                {[1, 2, 3, 4].map((result) => (
-                  <Link href="/search?q=nice">
+                {[1, 2, 3, 4].map((result,k) => (
+                  <Link key={k} href="/search?q=nice">
                     <div className="border-b flex border-b-gray-400">
                       <Image
                         alt="search-image"
@@ -100,8 +100,8 @@ const Slider = ({ open, close }: { open: boolean; close: any }) => {
         open ? "translate-x-0" : "-translate-x-full"
       }`}
     >
-      {contents.map((content) => (
-        <Link onClick={() => close()} href={`/${content.label}`}>
+      {contents.map((content, k) => (
+        <Link key={k} onClick={() => close()} href={`/${content.label}`}>
           <div className="my-2 text-lg duration-100 font-medium px-10 pr-28 text-left hover:text-white hover:bg-gray-700 py-3">
             {content.label}
           </div>
@@ -125,8 +125,8 @@ const MiniHeader = () => {
         "Properties",
         "Properties",
         "Properties",
-      ].map((item) => (
-        <Link href="/category/item">
+      ].map((item, k) => (
+        <Link key={k} href="/category/item">
           <div className="text-sm my-2">{item}</div>
         </Link>
       ))}
