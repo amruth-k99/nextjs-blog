@@ -466,9 +466,17 @@ export async function getStaticProps({
 }
 
 export async function getStaticPaths({ locales }: GetStaticPathsContext) {
-  const { posts } = await postAPI.getAllPosts({
-    page: "all",
-  });
+  let posts = [];
+  try {
+    const response = await postAPI.getAllPosts({
+      page: "all",
+    });
+
+    posts = response?.posts||[]
+  } catch (error) {
+    
+  }
+ 
 
   return {
     paths: posts.map((post: any) => `/post/${post.slug}`),
