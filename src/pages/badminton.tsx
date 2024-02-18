@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Carousel } from "react-responsive-carousel";
 
+const REFRESH_TIMER = 2 * 60 * 1000;
 const CONFIG = {
   timer: 6000,
   autoplay: true,
@@ -35,6 +36,7 @@ const CONFIG = {
 };
 
 const BadmintonFramePage = () => {
+  const timerRef = useRef();
   const courts = CONFIG.courts;
 
   const Swipable = ({ court, number }: any) => {
@@ -50,32 +52,32 @@ const BadmintonFramePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5">
               <div className="col-span-1 px-2 pb-6">
                 <div className="bg-gray-700 h-full rounded-md p-2 pb-4">
-                  <div className="text-xl font-semibold text-left text-white mb-2">
+                  <div className="text-xl font-medium text-left text-gray-300 mb-4">
                     Match Number:{" "}
-                    <label className="text-xl font-bold">
+                    <div className="text-2xl text-white font-bold">
                       {court.matchNumber}
-                    </label>
+                    </div>
                   </div>
-                  <div className="text-xl font-semibold text-left text-white mb-2">
+                  <div className="text-xl font-medium text-left text-gray-300 mb-4">
                     Currently Playing:{" "}
-                    <label className="text-xl font-bold">
+                    <div className="text-2xl text-white font-bold">
                       {court.currentPlay}
-                    </label>
+                    </div>
                   </div>
-                  <div className="text-xl font-semibold text-left text-white mb-2">
+                  <div className="text-xl font-medium text-left text-gray-300 mb-4">
                     Next Scheduled for:{" "}
-                    <label className="text-xl font-bold">
+                    <div className="text-2xl text-white font-bold">
                       {" "}
                       {court.upcomingMatchTime}
-                    </label>
+                    </div>
                   </div>
 
-                  <div className="text-xl font-semibold text-left text-white mb-2">
+                  <div className="text-xl font-medium text-left text-gray-300 mb-2">
                     Next Play:{" "}
-                    <label className="text-xl font-bold">
+                    <div className="text-xl text-white font-bold">
                       {" "}
                       {court.upcomingPlay}
-                    </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -97,6 +99,11 @@ const BadmintonFramePage = () => {
     );
   };
 
+  useEffect(() => {
+    setInterval(() => {
+      window.location.reload();
+    }, REFRESH_TIMER);
+  }, []);
 
   return (
     <div>
@@ -107,8 +114,8 @@ const BadmintonFramePage = () => {
           className="h-50 xs:m-auto md:mr-auto md:col-span-1 my-auto justify-start text-left px-3"
           alt="Univeristy of New Haven"
         />
-        <div className="my-3 md:text-left xs:m-auto md:mr-auto text-md m-auto text-4xl font-bold text-[#ffcc33]">
-          Badminton Club
+        <div className="my-3 col-span-3 md:text-center xs:m-auto md:mx-auto text-md m-auto text-4xl font-bold text-[#ffcc33]">
+          Badminton Tournament
         </div>
       </div>
 
