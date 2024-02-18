@@ -3,33 +3,33 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 
 const CONFIG = {
-  timer: 4000,
+  timer: 6000,
   autoplay: true,
   courts: [
     // court 1
     {
-      iframe: "https://challonge.com/uaezfwpw/module",
       matchNumber: 2,
       currentPlay: "Koti vs Pavan",
       upcomingPlay: "Amruth vs Hemanth",
       upcomingMatchTime: "2:00 PM",
+      iframe: "https://challonge.com/uaezfwpw/module",
     },
     // court 2
     {
-      iframe: "https://challonge.com/uaezfwpw/module",
+      matchNumber: 7,
       currentPlay: "Koti vs Pavan",
       upcomingPlay: "Amruth vs Hemanth",
-      matchNumber: 7,
       upcomingMatchTime: "3:10 PM",
+      iframe: "https://challonge.com/uaezfwpw/module",
     },
 
     // court 3
     {
-      iframe: "https://challonge.com/uaezfwpw/module",
+      matchNumber: 14,
       currentPlay: "Koti vs Pavan",
       upcomingPlay: "Amruth vs Hemanth",
-      matchNumber: 14,
       upcomingMatchTime: "1:30 PM",
+      iframe: "https://challonge.com/uaezfwpw/module",
     },
   ],
 };
