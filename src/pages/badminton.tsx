@@ -10,26 +10,26 @@ const CONFIG = {
     // court 1
     {
       matchNumber: "Men's Doubles (1)",
-      currentPlay: "Starts from 12:00 PM",
+      currentPlay: "Manoj Team VS Sai Teja Team",
       upcomingPlay: "-",
-      upcomingMatchTime: "2:00 PM",
+      upcomingMatchTime: "12:30 PM",
       iframe: "https://challonge.com/q3x6u103/module",
     },
     // court 2
     {
       matchNumber: "Men's Singles (1)",
-      currentPlay: "Starts from 12:00 PM",
+      currentPlay: "Prasad VS Raghavendra Yadavalli",
       upcomingPlay: "-",
-      upcomingMatchTime: "3:10 PM",
+      upcomingMatchTime: "12:30 PM",
       iframe: "https://challonge.com/kktp5kms/module",
     },
 
     // court 3
     {
       matchNumber: "Women's Singles (1)",
-      currentPlay: "Starts from 12:00 PM",
+      currentPlay: "Asfiya VS Maral",
       upcomingPlay: "-",
-      upcomingMatchTime: "1:30 PM",
+      upcomingMatchTime: "12:30 PM",
       iframe: "https://challonge.com/ra5lfwtp/module",
     },
   ],
