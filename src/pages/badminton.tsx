@@ -18,8 +18,8 @@ const CONFIG = {
     // court 2
     {
       matchNumber: "Men's Singles (1)",
-      currentPlay: "Prasad VS Raghavendra Yadavalli",
-      upcomingPlay: "Sri Sai Kiran VS Swetket Tiwari",
+      currentPlay: "Sri Sai Kiran VS Swetket Tiwari",
+      upcomingPlay: "-",
       upcomingMatchTime: "12:30 PM",
       iframe: "https://challonge.com/kktp5kms/module",
     },
