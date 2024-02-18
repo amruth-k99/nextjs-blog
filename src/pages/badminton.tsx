@@ -11,7 +11,7 @@ const CONFIG = {
     {
       matchNumber: "Men's Doubles (1)",
       currentPlay: "Yogesh Team VS Sampath Team",
-      upcomingPlay: "-",
+      upcomingPlay: "Mohan Team VS Pawan Team",
       upcomingMatchTime: "1:00 PM",
       iframe: "https://challonge.com/q3x6u103/module",
     },
@@ -19,7 +19,7 @@ const CONFIG = {
     {
       matchNumber: "Men's Singles (1)",
       currentPlay: "Pradeep Singh VS Venugopal Reddy",
-      upcomingPlay: "Mohan VS Pawan",
+      upcomingPlay: "Suhanth VS Sai Teja Ajmeera",
       upcomingMatchTime: "2:00 PM",
       iframe: "https://challonge.com/kktp5kms/module",
     },
