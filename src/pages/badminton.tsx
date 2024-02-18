@@ -27,7 +27,7 @@ const CONFIG = {
     // court 3
     {
       matchNumber: "Women's Singles (1)",
-      currentPlay: "Snehal VS Keerthana",
+      currentPlay: "Pratyusha VS KLavya",
       upcomingPlay: "-",
       upcomingMatchTime: "1:30 PM",
       iframe: "https://challonge.com/ra5lfwtp/module",
