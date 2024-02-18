@@ -10,7 +10,7 @@ const CONFIG = {
     // court 1
     {
       matchNumber: "Men's Doubles (1)",
-      currentPlay: "Mohan Team VS Pawan Team",
+      currentPlay: "Yogesh Team VS Sampath Kumar Team",
       upcomingPlay: "-",
       upcomingMatchTime: "1:30 PM",
       iframe: "https://challonge.com/q3x6u103/module",
@@ -18,7 +18,7 @@ const CONFIG = {
     // court 2
     {
       matchNumber: "Men's Singles (1)",
-      currentPlay: "Suhanth VS Sai Teja Ajmeera",
+      currentPlay: "Swetketh VS Sri Sai",
       upcomingPlay: "-",
       upcomingMatchTime: "1:30 PM",
       iframe: "https://challonge.com/kktp5kms/module",
@@ -27,8 +27,8 @@ const CONFIG = {
     // court 3
     {
       matchNumber: "Women's Singles (1)",
-      currentPlay: "Shruthi VS Deekshitha",
-      upcomingPlay: "Snehal VS Keerthana",
+      currentPlay: "Snehal VS Keerthana",
+      upcomingPlay: "-",
       upcomingMatchTime: "1:30 PM",
       iframe: "https://challonge.com/ra5lfwtp/module",
     },
