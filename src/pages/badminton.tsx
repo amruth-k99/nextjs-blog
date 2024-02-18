@@ -9,16 +9,16 @@ const CONFIG = {
   courts: [
     // court 1
     {
-      matchNumber: "Men's Singles (1)",
-      currentPlay: "Yogesh VS Giri",
-      upcomingPlay: "Sarthak VS Imran",
-      upcomingMatchTime: "2:00 PM",
+      matchNumber: "Men's Doubles",
+      currentPlay: "Semis",
+      upcomingPlay: "-",
+      upcomingMatchTime: "3:30 PM",
       iframe: "https://challonge.com/q3x6u103/module",
     },
     // court 2
     {
-      matchNumber: "Men's Singles (1)",
-      currentPlay: "Veekshith VS Prem",
+      matchNumber: "Men's Singles",
+      currentPlay: "Semis",
       upcomingPlay: "-",
       upcomingMatchTime: "1:40 PM",
       iframe: "https://challonge.com/kktp5kms/module",
@@ -26,10 +26,10 @@ const CONFIG = {
 
     // court 3
     {
-      matchNumber: "Women's Singles (1)",
-      currentPlay: "Sushmitha VS Sudhashree",
+      matchNumber: "Women's Singles",
+      currentPlay: "Bhavana VS Kavya",
       upcomingPlay: "-",
-      upcomingMatchTime: "1:40 PM",
+      upcomingMatchTime: "3:00 PM",
       iframe: "https://challonge.com/ra5lfwtp/module",
     },
   ],
