@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const REFRESH_TIMER = 2 * 60 * 1000;
 const CONFIG = {
-  timer: 6000,
+  timer: 10000,
   autoplay: true,
   courts: [
     // court 1
