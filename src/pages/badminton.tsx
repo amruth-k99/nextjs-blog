@@ -10,9 +10,9 @@ const CONFIG = {
     // court 1
     {
       matchNumber: "Men's Doubles (1)",
-      currentPlay: "Manoj Team VS Sai Teja Team",
-      upcomingPlay: "Yogesh Team VS Sampath Team",
-      upcomingMatchTime: "12:30 PM",
+      currentPlay: "Yogesh Team VS Sampath Team",
+      upcomingPlay: "-",
+      upcomingMatchTime: "1:00 PM",
       iframe: "https://challonge.com/q3x6u103/module",
     },
     // court 2
