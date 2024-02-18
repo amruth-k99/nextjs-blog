@@ -465,6 +465,7 @@ export async function getStaticProps({
   }
 }
 
+// TODO: FIX this before moving to production
 export async function getStaticPaths({ locales }: GetStaticPathsContext) {
   let posts = [];
   try {

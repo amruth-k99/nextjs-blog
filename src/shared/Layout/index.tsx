@@ -10,10 +10,13 @@ function Layout(props: LayoutProps) {
   return (
     <div>
       {/* Header */}
-      <Header />
-      <div className="mt-28">{props.children}</div>
+      {/* <Header /> */}
+      {/* <div className="mt-28"> */}
+      {/*  */}
+      {props.children}
+      {/* </div> */}
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

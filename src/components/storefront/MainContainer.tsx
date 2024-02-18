@@ -7,7 +7,7 @@ const MainContainer = (): JSX.Element => {
     {
       createdAt: moment().format("MMM DD, YYYY"),
       id: "345345",
-      thumbnail: '"https://picsum.photos/600/400"',
+      thumbnail: 'https://picsum.photos/600/400',
     },
   ];
 

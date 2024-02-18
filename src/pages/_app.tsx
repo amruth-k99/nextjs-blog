@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import "react-loading-skeleton/dist/skeleton.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import type { AppProps } from "next/app";
 import Layout from "../shared/Layout";
 import "react-toastify/dist/ReactToastify.css";
