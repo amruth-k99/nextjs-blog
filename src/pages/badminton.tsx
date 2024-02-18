@@ -26,7 +26,7 @@ const CONFIG = {
 
     // court 3
     {
-      matchNumber: "Women's Doubles (1)",
+      matchNumber: "Women's Singles (1)",
       currentPlay: "Starts from 12:00 PM",
       upcomingPlay: "-",
       upcomingMatchTime: "1:30 PM",
