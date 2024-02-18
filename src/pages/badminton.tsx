@@ -28,7 +28,7 @@ const CONFIG = {
     {
       matchNumber: "Women's Singles (1)",
       currentPlay: "Asfiya VS Maral",
-      upcomingPlay: "-",
+      upcomingPlay: "Shruthi VS Deekshitha",
       upcomingMatchTime: "12:30 PM",
       iframe: "https://challonge.com/ra5lfwtp/module",
     },
