@@ -11,8 +11,8 @@ const CONFIG = {
     {
       matchNumber: "Men's Singles (1)",
       currentPlay: "Yogesh VS Giri",
-      upcomingPlay: "-",
-      upcomingMatchTime: "1:30 PM",
+      upcomingPlay: "Sarthak VS Imran",
+      upcomingMatchTime: "2:00 PM",
       iframe: "https://challonge.com/q3x6u103/module",
     },
     // court 2
