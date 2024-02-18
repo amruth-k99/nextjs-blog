@@ -10,27 +10,27 @@ const CONFIG = {
     // court 1
     {
       matchNumber: 2,
-      currentPlay: "Koti vs Pavan",
-      upcomingPlay: "Amruth vs Hemanth",
+      currentPlay: "Starts from 12:00 PM",
+      upcomingPlay: "-",
       upcomingMatchTime: "2:00 PM",
-      iframe: "https://challonge.com/uaezfwpw/module",
+      iframe: "https://challonge.com/q3x6u103/module",
     },
     // court 2
     {
       matchNumber: 7,
-      currentPlay: "Koti vs Pavan",
-      upcomingPlay: "Amruth vs Hemanth",
+      currentPlay: "Starts from 12:00 PM",
+      upcomingPlay: "-",
       upcomingMatchTime: "3:10 PM",
-      iframe: "https://challonge.com/uaezfwpw/module",
+      iframe: "https://challonge.com/kktp5kms/module",
     },
 
     // court 3
     {
       matchNumber: 14,
-      currentPlay: "Koti vs Pavan",
-      upcomingPlay: "Amruth vs Hemanth",
+      currentPlay: "Starts from 12:00 PM",
+      upcomingPlay: "-",
       upcomingMatchTime: "1:30 PM",
-      iframe: "https://challonge.com/uaezfwpw/module",
+      iframe: "https://challonge.com/ra5lfwtp/module",
     },
   ],
 };
@@ -85,7 +85,7 @@ const BadmintonFramePage = () => {
               <div className="col-span-4">
                 <div className="h-[80vh]">
                   <iframe
-                    src={"https://challonge.com/uaezfwpw/module"}
+                    src={court.iframe}
                     width="100%"
                     height="95%"
                     frameBorder="0"
