@@ -18,9 +18,9 @@ const CONFIG = {
     // court 2
     {
       matchNumber: "Men's Singles (1)",
-      currentPlay: "Sri Sai Kiran VS Swetket Tiwari",
+      currentPlay: "Pradeep Singh VS Venugopal Reddy",
       upcomingPlay: "-",
-      upcomingMatchTime: "12:30 PM",
+      upcomingMatchTime: "1:30 PM",
       iframe: "https://challonge.com/kktp5kms/module",
     },
 
@@ -28,8 +28,8 @@ const CONFIG = {
     {
       matchNumber: "Women's Singles (1)",
       currentPlay: "Shruthi VS Deekshitha",
-      upcomingPlay: "-",
-      upcomingMatchTime: "12:30 PM",
+      upcomingPlay: "Snehal VS Keerthana",
+      upcomingMatchTime: "1:00 PM",
       iframe: "https://challonge.com/ra5lfwtp/module",
     },
   ],
