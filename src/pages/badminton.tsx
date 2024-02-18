@@ -9,7 +9,7 @@ const CONFIG = {
   courts: [
     // court 1
     {
-      matchNumber: 2,
+      matchNumber: "Men's Doubles (1)",
       currentPlay: "Starts from 12:00 PM",
       upcomingPlay: "-",
       upcomingMatchTime: "2:00 PM",
@@ -17,7 +17,7 @@ const CONFIG = {
     },
     // court 2
     {
-      matchNumber: 7,
+      matchNumber: "Men's Singles (1)",
       currentPlay: "Starts from 12:00 PM",
       upcomingPlay: "-",
       upcomingMatchTime: "3:10 PM",
@@ -26,7 +26,7 @@ const CONFIG = {
 
     // court 3
     {
-      matchNumber: 14,
+      matchNumber: "Women's Doubles (1)",
       currentPlay: "Starts from 12:00 PM",
       upcomingPlay: "-",
       upcomingMatchTime: "1:30 PM",
