@@ -10,7 +10,7 @@ const CONFIG = {
     // court 1
     {
       matchNumber: "Men's Singles (1)",
-      currentPlay: "Swetketh VS Sri Sai Kiran",
+      currentPlay: "Yogesh VS Giri",
       upcomingPlay: "-",
       upcomingMatchTime: "1:30 PM",
       iframe: "https://challonge.com/q3x6u103/module",
@@ -18,8 +18,8 @@ const CONFIG = {
     // court 2
     {
       matchNumber: "Men's Singles (1)",
-      currentPlay: "Chiranjeevi VS Nikhil",
-      upcomingPlay: "Veekshith VS Prem",
+      currentPlay: "Veekshith VS Prem",
+      upcomingPlay: "-",
       upcomingMatchTime: "1:40 PM",
       iframe: "https://challonge.com/kktp5kms/module",
     },
